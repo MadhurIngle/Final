@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { EvenNumberComponent } from './even-number/even-number.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EvenNumberComponent
   ],
   imports: [
     BrowserModule,
