@@ -1,24 +1,15 @@
-<p>even-number works!</p>
-<body>
+<div class="container-fluid">
     <div style="background-color:teal">
         <h1>Midterm Exam</h1>
         <p>Find all prime numbers between two numbers</p>
     </div>
-    <div align ='center'>
-    <table>
-        <tr>
-            <td>Number 1</td>
-            <td>Number 2</td>
-        </tr>
-        <tr>
-            <td><input type="text" id ='numberOne'></td>
-            <td><input type="text" id ='numberTwo'></td>
-        </tr>
-        <tr>
-            <td><button id ='submit'>Submit</button></td>
-        </tr>
-    </table>
+    <div class="row">
+        <input type="number" class="col-6" name="firstNumber" id="firstNumber">
+        <input type="number" class="col-6" name="secondNumber" id="secondNumber">
+        <button type="button" class="btn btn-outline-primary">Submit</button>
     </div>
-    <div id ='logic'></div>
-    <div id = 'logic2'></div>
-</body>
+    <div class="form-group">
+        <label for="">Calculation Result</label>
+        <textarea class="form-control" name="" id="" rows="3"></textarea>
+    </div>
+</div>
