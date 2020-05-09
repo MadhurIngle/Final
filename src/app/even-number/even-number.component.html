@@ -4,12 +4,12 @@
         <p>Find all prime numbers between two numbers</p>
     </div>
     <div class="row">
-        <input type="number" class="col-6" name="firstNumber" id="firstNumber">
-        <input type="number" class="col-6" name="secondNumber" id="secondNumber">
-        <button type="button" class="btn btn-outline-primary">Submit</button>
+        <input type="text" class="col-6" name="firstNumber" id="firstNumber" [formControl]="firstNumber">
+        <input type="text" class="col-6" name="secondNumber" id="secondNumber" [formControl]="secondNumber">
+        <button type="button" class="btn btn-outline-primary" (click)="printEven()">Submit</button>
     </div>
     <div class="form-group">
         <label for="">Calculation Result</label>
-        <textarea class="form-control" name="" id="" rows="3"></textarea>
+        <textarea class="form-control" name="" id="" rows="3" name="resultTxt"  [formControl]="resultTxt"></textarea>
     </div>
 </div>
